@@ -19,6 +19,7 @@ function Home() {
         <p>img dashboard</p>
       </div>
       <br />
+      <h2>Testttttttttttttttttttttttttttt</h2>
     </div>
   );
 }
