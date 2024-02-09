@@ -3,10 +3,10 @@ import React from "react";
 const Aboutus = () => {
  
   return (
-    <div className="px-24 py-5 border-black bg-blue-300 border">
+    <div id="about-me" className="p-5 ">
       {/* <div className="bg-red-300  border"> */}
-        <h1 className="text-center text-2xl font-semibold p-5">About Me</h1>
-        <p className=" text-lg font-base text-center text-wrap">
+        <h1 className="text-center text-lg md:text-xl lg:text-2xl font-semibold ">About</h1>
+        <p className=" text-sm md:text-md lg:text-lg font-base text-center text-wrap pt-2 ">
           I'm a career changer passionate about building responsive web
           applications. I graduated from the "Generation thailand" Bootcamp
           cohort 6, mastering JavaScript, React, Node.js, Express, TailwindCSS,
@@ -15,7 +15,6 @@ const Aboutus = () => {
         </p>
       {/* </div> */}
     </div>
- 
   );
 };
 

@@ -6,8 +6,9 @@ import Navbar from "./Component/Navbar";
 import Home from "./Component/Home";
 import Aboutus from "./Component/Aboutus";
 import Project from "./Component/Project";
-// import Skill from './Component/Skill'
+import Skill from './Component/Skill'
 import Contact from './Component/Contact'
+import Experience from "./Component/Experience";
 // import Portfolio from './Component/portfolio'
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
       <Navbar />
       <Home />
       <Aboutus />
+      <Skill/>
+      <Experience/>
       <Project />
       <Contact/>
     </>

@@ -14,26 +14,5 @@
         "skill":["react","Express","MongoDB"],
         "demo":"versel",
         "github":"github"
-    },   {
-        "title":"I.Move",
-        "imageSrc":"public/diego-ph-5LOhydOtTKU-unsplash.jpg",
-        "description":"This is project to learn React",
-        "skill":["react","Express","MongoDB"],
-        "demo":"versel",
-        "github":"github"
-    },   {
-        "title":"I.Move",
-        "imageSrc":"public/diego-ph-5LOhydOtTKU-unsplash.jpg",
-        "description":"This is project to learn React",
-        "skill":["react","Express","MongoDB"],
-        "demo":"versel",
-        "github":"github"
-    },   {
-        "title":"I.Move",
-        "imageSrc":"public/diego-ph-5LOhydOtTKU-unsplash.jpg",
-        "description":"This is project to learn React",
-        "skill":["react","Express","MongoDB"],
-        "demo":"versel",
-        "github":"github"
     }
 ]

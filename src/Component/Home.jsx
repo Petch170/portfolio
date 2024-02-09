@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
+import Navbar from "./Navbar";
 
 const Home = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -40,49 +42,50 @@ const Home = () => {
   };
 
   return (
-    <div className=" relative flex justify-center flex-col md:flex-row gap-10 overflow-hidden bg-[url('public/diego-ph-5LOhydOtTKU-unsplash.jpg')] px-24 py-12 bg-center bg-cover bg-no-repeat ">
-      <div className="  order-2 lg:w-2/3 md:order-1 md:w-1/2 border border-red-700 p-10 gap-10 justify-center">
-        <div>
-          <span className="tagline tracking-[.8px] font-bold text-xl mb-4 inline-block bg-gradient-to-r from-violet-500 to-fuchsia-500 border border-[255,255,255,.5] rounded-md py-2 px-3">
+
+    <div id="home" className=" relative p-5 mt-5 flex justify-center flex-col md:flex-row h-[450px] ">
+      {/* overflow-hidden bg-[url('public/diego-ph-5LOhydOtTKU-unsplash.jpg')] bg-center bg-cover bg-no-repeat */}
+      <div className="justify-center mt-5">
+        <div className="w-full md:w-[60%]">
+          <span className="tagline tracking-[.8px] px-3 font-bold text-lg my-4 inline-block bg-gradient-to-r from-violet-500 to-fuchsia-500 border border-[255,255,255,.5] rounded-md ">
             {" "}
             Welcome to my Portfolio
           </span>
-          <h1 className=" font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+          <h1 className=" font-bold text-xl md:text-2xl lg:text-4xl py-4">
             Hi, I'm Sojirat Petchpaiboon
           </h1>
-          <h4 className=" font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl h-24">
-            {text}
+          <h4 className=" font-bold text-xl md:text-2xl lg:text-3xl py-4">
+            {text} <br />
           </h4>
 
-          <p className=" font-base text-xl md:text-4xl lg:text-5xl xl:text-xl pb-9">
+          <p className=" font-base text-sm md:text-md py-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
             possimus nobis voluptates voluptatum pariatur unde atque est magnam
             amet deleniti. Molestias consequuntur alias, labore ipsa magnam
             provident perspiciatis temporibus soluta!
           </p>
         </div>
-        <div className="flex  p-5 gap-5">
-          <button
-            onClick={() => console.log("Download")}
-            className=" border border-blue px-7 py-1 gap-2"
-          >
-            Download CV
-          </button>
-          <button
-            onClick={() => console.log("linkin")}
-            className=" flex border border-blue px-11 py-1 gap-2"
-          >
-            {" "}
-            <img
-              src="src/assets/github_2111432.png"
-              alt="github"
-              width="20px"
-            ></img>{" "}
-            Linkin
-          </button>
+        <div className="flex pt-5 gap-5">
+          <a href="public/CV_Sojirat.pdf">
+            <button className=" bg-[#588594] flex gap-2 w-32 lg:w-44 py-2 justify-center rounded-lg">
+              <ArrowDownTrayIcon className="w-5" />
+              CV
+            </button>
+          </a>
+
+          <a href="https://www.linkedin.com/in/sojirat/">
+            <button className=" flex bg-[#588594] gap-2 w-32 lg:w-44 py-2 justify-center rounded-lg">
+              <img
+                src="src/assets/github_2111432.png"
+                alt="github"
+                width="20px"
+              ></img>{" "}
+              Linkin
+            </button>
+          </a>
         </div>
       </div>
-      {/* <div className="order-1 md:order-2 flex border border-yellow-500 bg-center md:w-1/2 lg:w-1/3 ">
+      {/* <div className="flex border border-yellow-500 bg-center md:w-1/2 lg:w-1/3 ">
         <img
           className=" w-full h-full object-cover object-center"
           src="src/assets/377309.jpg"

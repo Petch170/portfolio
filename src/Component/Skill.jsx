@@ -47,27 +47,27 @@ const Skill = () => {
 
   return (
     <div className="p-5 ">
-      <div className="px-20">
-        <h1 className=" text-center text-2xl font-semibold border border-r-amber-500 p-5">My Skill</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border border-blue-800 gap-4">
+    
+        <h1 className=" text-center text-lg md:text-xl lg:text-2xl font-semibold pb-2">My Skill</h1>
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-3 justify-center pt-2 pb-5">
           {data.map((member) => (
             <div
               key={member.id}
-              className="border border-orange-600 mx-4 p-5 flex flex-col justify-center items-center  "
+              className="border border-orange-600 rounded-md flex flex-col items-center "
             >
-              <div className=" border border-t-green-900 p-2 w-40 h-40  ">
+              <div className=" p-3 w-20 md:w-25 lg:24 h-16  ">
                 <img
                   src={member.image}
                   alt={member.name}
                   className="w-full h-full object-scale-down"
                 />
               </div>
-              <h3 className="text-lg p-3">{member.name}</h3>
+              <h3 className="text-sm md:text-md lg:text-lg text-wrap text-center pb-3">{member.name}</h3>
             </div>
           ))}
         </div>
       </div>
-    </div>
+   
   );
 };
 

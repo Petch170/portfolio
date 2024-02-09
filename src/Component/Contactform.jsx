@@ -38,7 +38,7 @@ const Contactform = () => {
             Message:
           </label>
           <textarea
-            className=" w-full text-xl p-2 outline-none border-none rounded-lg mt-2  text-gray-600"
+            className=" w-full h-[115px] text-xl p-2 outline-none border-none rounded-lg mt-2  text-gray-600"
             placeholder="Message"
             type="text"
             value={message}
@@ -49,7 +49,7 @@ const Contactform = () => {
           {" "}
           <button
             type="submit"
-            className="border border-blue-600 bg-orange-500 rounded-2xl py-3 px-8 "
+            className="bg-[#588594] rounded-2xl py-2 px-8 text-lg"
           >
             Button
           </button>

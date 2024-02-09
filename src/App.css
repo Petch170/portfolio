@@ -10,8 +10,12 @@ body {
     font-weight: 400;
     overflow-x: hidden;
     font-family: cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* background-image:url("public/diego-ph-5LOhydOtTKU-unsplash.jpg");
+    background-repeat:no-repeat; 
+    background-position: center top;
+    background-size: cover; */
     background-color: rgb(34, 30, 41);
-    color: rgb(229, 231, 219);
+    color: #F9EBFF;
 }
 
 html {

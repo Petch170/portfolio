@@ -1,0 +1,33 @@
+[
+    {
+        "title": "Sales",
+        "company": "Delta vet.,Co.th",
+        "date": "Feb 2021- June 2021",
+        "work": [
+            "Proactively seek and engage new customers to drive business growth.",
+            "Efficiently manage reception order, quotation creation, and departmental coordination.",
+            "Conduct product training for client companies, ensuring effective client engagement and satisfaction."
+            
+        ]
+    },
+    {
+        "title": "Purchase, admin officer",
+        "company": "System P.,Co.th ",
+        "date": "Oct 2019- Jan 2021",
+        "work": [
+            "Proficient in procurement bidding and E-bidding management.", 
+            "Oversaw domestic IT/Gadget purchases, fostering departmental collaboration.",
+            "Work with the government sector to maintain server networks. Create interesting and timely monthly reports. and actively participate in document preparation."
+        ]
+    },
+    {
+        "title": "Accountant",
+        "company": "P.S.Accounting & Business Office",
+        "date": "Jul 2013- Nov 2018",
+        "work": [
+            "Proficient in Express accounting software, specializing in comprehensive records management.",
+            "Proven ability to meet deadlines while overseeing accounting operations for 11 companies and 2 subsidiaries.",
+            "Collaborate seamlessly with internal departments, handle diverse responsibilities, contributing to overall workflow efficiency"
+        ]
+    }
+]
