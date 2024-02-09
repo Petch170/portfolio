@@ -1,9 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     height: 100vh;
     width: 100%;
+    font-weight: 400;
+    overflow-x: hidden;
+    font-family: cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(34, 30, 41);
+    color: rgb(229, 231, 219);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
 }

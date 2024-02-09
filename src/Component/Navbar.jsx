@@ -1,25 +1,40 @@
-import React from "react";
-// import logo1 from './Picture/logo1'
+import React, { useEffect, useState } from "react";
+import logo from'../assets/download.jpg';
 
 function Navbar() {
+  const [activeLink,setActiveLink] = useState('home');
+  const [scrolled,setScrolled]=useState(false);
+
+useEffect(()=>{
+  const onScroll =()=>{
+    if(window.scrollY>50){
+      setScrolled(true);
+    }else{
+      setScrolled(false);
+    }
+  }
+window.addEventListener("scroll",onscroll);
+return()=>window.removeEventListener('scroll',onScroll);
+
+},[])
+
+const onUpdateActiveLink = (value)=>{
+  setActiveLink(value);
+}
+
+
   return (
-    <div className="navbar bg-orange-200 h-16 w-full flex justify-between items-center pl-2 pr-16">
-      <div className="navlogobar flex  items-center">
-        <img className="nav w-14 h-14" src="src\Picture\logo1.png" alt="icon" />
-        <span className="Logo">I.MOVE</span>
-      </div>
-      <ul className="list flex gap-10">
+    <div className={`${scrolled ? "scrolled" : ""} bg-blue h-16 w-full flex justify-between items-center px-6 text-lg opacity-75`}>
+      <div > <img src="#" alt="logo"/>   Petch</div>
+      <ul className="list flex gap-10 ">
         <li>
-          <a href="#"></a> Contact
+          <a className={`hover:cursor-pointer opacity-100 ${activeLink==='home'? 'active navbar-link':'navbar-link'} `} href="#" onClick={()=>onUpdateActiveLink('home')}>About Us</a> 
         </li>
         <li>
-          <a href="#"></a> About
+          <a className={`hover:cursor-pointer opacity-100 ${activeLink==='project'? 'active navbar-link':'navbar-link'} `} href="#" onClick={()=>onUpdateActiveLink('project')}>Project</a> 
         </li>
         <li>
-          <a href="#"></a> Login
-        </li>
-        <li>
-          <a href="#"></a> Sign up
+          <a className={`hover:cursor-pointer opacity-100 ${activeLink==='contact'? 'active navbar-link':'navbar-link'} `} href="#" onClick={()=>onUpdateActiveLink('contact')}>Contact</a> 
         </li>
       </ul>
     </div>

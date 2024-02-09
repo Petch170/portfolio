@@ -1,0 +1,39 @@
+[
+    {
+        "title":"React Assignment",
+        "imageSrc":"public/react assignment.png",
+        "description":"This is project to learn React",
+        "skill":["react","tailwind"],
+        "demo":"https://24-react-assessment.vercel.app/",
+        "github":"https://github.com/Petch170/24-react-assessment.git"
+    },
+    {
+        "title":"I.Move",
+        "imageSrc":"public/diego-ph-5LOhydOtTKU-unsplash.jpg",
+        "description":"This is project to learn React",
+        "skill":["react","Express","MongoDB"],
+        "demo":"versel",
+        "github":"github"
+    },   {
+        "title":"I.Move",
+        "imageSrc":"public/diego-ph-5LOhydOtTKU-unsplash.jpg",
+        "description":"This is project to learn React",
+        "skill":["react","Express","MongoDB"],
+        "demo":"versel",
+        "github":"github"
+    },   {
+        "title":"I.Move",
+        "imageSrc":"public/diego-ph-5LOhydOtTKU-unsplash.jpg",
+        "description":"This is project to learn React",
+        "skill":["react","Express","MongoDB"],
+        "demo":"versel",
+        "github":"github"
+    },   {
+        "title":"I.Move",
+        "imageSrc":"public/diego-ph-5LOhydOtTKU-unsplash.jpg",
+        "description":"This is project to learn React",
+        "skill":["react","Express","MongoDB"],
+        "demo":"versel",
+        "github":"github"
+    }
+]

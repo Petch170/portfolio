@@ -1,19 +1,23 @@
 import React from "react";
 
-function Aboutus() {
+const Aboutus = () => {
+ 
   return (
-    <div className="about font-semibold text-3xl text-center">
-      <h2>
-        "I.MOVE" is not just an app but a companion that encourages you to lead
-        a strong and healthy lifestyle. Whether you are out for a run or simply
-        taking a leisurely stroll, you are not alone. We are delighted to make
-        every day of yours an "Active" day, filled with satisfaction.
-      </h2>
-<br />
-      <h2>Start today and become a part of the "I.MOVE" community with us!</h2>
-      <br />
+    <div className="px-24 py-5 border-black bg-blue-300 border">
+      {/* <div className="bg-red-300  border"> */}
+        <h1 className="text-center text-2xl font-semibold p-5">About Me</h1>
+        <p className=" text-lg font-base text-center text-wrap">
+          I'm a career changer passionate about building responsive web
+          applications. I graduated from the "Generation thailand" Bootcamp
+          cohort 6, mastering JavaScript, React, Node.js, Express, TailwindCSS,
+          MongoDB, HTML, CSS, and Git. Quick learner, always evolving. Excited to contribute my skills to innovative projects and continually
+          grow in the ever-changing tech landscape.
+        </p>
+      {/* </div> */}
     </div>
+ 
   );
-}
+};
+
 
 export default Aboutus;

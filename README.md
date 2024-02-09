@@ -33,8 +33,12 @@ module.exports = {
     extend: {
       backgroundImage: {
         'Banner: "url('src\Picture\run.jpg')",
-        <!-- 'footer-texture': "url('/img/footer-texture.png')" -->
+        <!-- 'footer-texture': "url('/img/footer-texture.png')"
       }
     }
   }
-} --># Project-Imove
+} --># Project-Imove -->
+
+- Install Material UI
+npm install @mui/material @emotion/react @emotion/styled
+# portfolio
