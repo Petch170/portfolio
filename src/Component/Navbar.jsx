@@ -15,7 +15,7 @@ const toggle=()=>{
 
 
   return (
-    <div className="border bg-red-300 top-0 z-20 py-5 px-5 w-full flex flex-wrap justify-between items-center text-lg Desktop fixed">
+    <div className="bg-[#0E3B43] top-0 z-20 py-6 px-5 w-full flex flex-wrap justify-between items-center text-lg Desktop fixed">
       <div>
         <a className="hover:cursor-pointer opacity-100" onClick={()=>scrollToSection('home')}>Petch</a> 
       </div>
@@ -24,7 +24,7 @@ const toggle=()=>{
           <a className="hover:cursor-pointer opacity-100"  onClick={()=>scrollToSection('about-me')}>About</a> 
         </li>
         <li>
-          <a className="hover:cursor-pointer opacity-100"  onClick={()=>scrollToSection('skill')}>SKill</a> 
+          <a className="hover:cursor-pointer opacity-100"  onClick={()=>scrollToSection('skill')}>Skill</a> 
         </li>
         <li>
           <a className="hover:cursor-pointer opacity-100"  onClick={()=>scrollToSection('Exp')}>Experience</a> 
