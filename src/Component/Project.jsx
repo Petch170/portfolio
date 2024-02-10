@@ -4,40 +4,43 @@ import { getImageUrl } from "../utils";
 
 const Project = () => {
   return (
-    <div id="myproject" className="p-5">
-      <h2 className=" text-lg md:text-xl lg:text-2xl font-semibold pb-2 tracking-[.8px] text-center">
-        Projects
-      </h2>
-      <div className="flex flex-wrap gap-6 pt-2 pb-5 justify-center">
-        {project.map((project, id) => {
-          return (
-            <div key={id} className=" border border-red-300 rounded-lg py-4 ">
-              <div className="px-6 w-60 md:w-72 h-44 md:h-52">
-                <img
-                  className=" mb-2 rounded-lg border border-blue-500 bg-contain bg-center w-full h-full "
-                  src={getImageUrl(project.imageSrc)}
-                  alt={` image of ${project.title}`}
-                ></img>
-              </div>
-              <div>
-                <h3 className=" text-md md:text-xl font-semibold text-wrap text-center">
-                  {project.title}
-                </h3>
-                <p className=" font-normal text-sm md:text-lg text-center">
-                  {project.description}
-                </p>
-                <ul className="w-full mt-4 flex flex-row flex-wrap gap-2 list-none justify-center">
-                  {project.skill.map((skill, id) => {
-                    return (
-                      <li
-                        key={id}
-                        className=" text-sm md:text-lg font-normal border rounded-full px-2 "
-                      >
-                        {skill}
-                      </li>
-                    );
-                  })}
-                </ul>
+    <div
+      id="myproject"
+      className="p-5 lg:h-[750px] flex items-center justify-center overflow-hidden bg-[url('/star2.jpg')] bg-center bg-cover bg-no-repeat">
+      <div className="w-full md:mx-36 lg:mx-56">
+        <h2 className=" text-center text-lg md:text-xl lg:text-3xl font-semibold my-2 underline">
+          Projects
+        </h2>
+        <div className="flex flex-wrap gap-10 pt-2 pb-5 justify-center">
+          {project.map((project, id) => {
+            return (
+              <div key={id} className=" border border-red-300 rounded-lg py-4 ">
+                <div className="px-6 w-60 md:w-[350px] h-44 md:h-[250px]">
+                  <img
+                    className=" mb-2 rounded-lg border border-blue-500 bg-contain bg-center w-full h-full "
+                    src={getImageUrl(project.imageSrc)}
+                    alt={` image of ${project.title}`}
+                  ></img>
+                </div>
+                <div>
+                  <h3 className=" text-md md:text-xl font-semibold text-wrap text-center">
+                    {project.title}
+                  </h3>
+                  <p className=" font-normal text-sm md:text-lg text-center">
+                    {project.description}
+                  </p>
+                  <ul className="w-full mt-4 flex flex-row flex-wrap gap-2 list-none justify-center">
+                    {project.skill.map((skill, id) => {
+                      return (
+                        <li
+                          key={id}
+                          className=" text-sm md:text-lg font-normal border rounded-full px-2 "
+                        >
+                          {skill}
+                        </li>
+                      );
+                    })}
+                  </ul>
                 </div>
                 <div className="w-full mt-4 flex justify-around ">
                   <a
@@ -53,10 +56,10 @@ const Project = () => {
                     Source
                   </a>
                 </div>
-              
-            </div>
-          );
-        })}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

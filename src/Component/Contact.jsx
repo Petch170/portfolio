@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+
 import {
   MapPinIcon,
   DevicePhoneMobileIcon,
   AtSymbolIcon,
 } from "@heroicons/react/24/outline";
-import Contactform from "./Contactform";
+
 
 const Contact = () => {
   const infoMe = {
@@ -14,8 +14,8 @@ const Contact = () => {
   };
 
   return (
-    <div id="contactme" className="p-5">
-      <h2 className="text-center text-lg md:text-xl lg:text-2xl font-semibold pb-2">
+    <div id="contactme" className="p-5 md:mx-36 lg:mx-56 lg:h-[750px] justify-center items-center">
+      <h2 className="text-center text-lg md:text-xl lg:text-3xl font-semibold my-2 md:my-8 underline lg:pt-36">
         Contact
       </h2>
       <div className="flex flex-wrap justify-center gap-14 pt-5 ">

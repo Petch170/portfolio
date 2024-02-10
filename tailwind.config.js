@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'banner': "url('public/diego-ph-5LOhydOtTKU-unsplash.jpg')",
+        'banner': "url('/sky.jpg')",
       },
     },
     plugins: [],

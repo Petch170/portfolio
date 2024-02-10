@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
-import Navbar from "./Navbar";
+import linkin from "/linkin.png"
+
 
 const Home = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setDeleting] = useState(false);
-  const toRotate = ["web Developer", "Full-Stack Developer"];
+  const toRotate = ["Web Developer", "Full-Stack Developer"];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(200 - Math.random() * 100);
   //ระยะเวลา
@@ -43,26 +44,23 @@ const Home = () => {
 
   return (
 
-    <div id="home" className=" relative p-5 mt-5 flex justify-center flex-col md:flex-row h-[450px] ">
-      {/* overflow-hidden bg-[url('public/diego-ph-5LOhydOtTKU-unsplash.jpg')] bg-center bg-cover bg-no-repeat */}
-      <div className="justify-center mt-5">
-        <div className="w-full md:w-[60%]">
-          <span className="tagline tracking-[.8px] px-3 font-bold text-lg my-4 inline-block bg-gradient-to-r from-violet-500 to-fuchsia-500 border border-[255,255,255,.5] rounded-md ">
+    <div id="home" className=" relative flex p-5 mt-5 justify-center items-center md:flex-row h-[750px] overflow-hidden bg-[url('/star2.jpg')] bg-center bg-cover bg-no-repeat">
+
+      <div className="items-center justify-center w-full md:w-[60%]">
+        <div className="px-4 ">
+          <span className="tagline tracking-[.8px] p-3 font-bold text-lg my-4 inline-block bg-gradient-to-r from-violet-500 to-fuchsia-500 border border-[255,255,255,.5] rounded-md ">
             {" "}
             Welcome to my Portfolio
           </span>
-          <h1 className=" font-bold text-xl md:text-2xl lg:text-4xl py-4">
+          <h1 className=" font-bold md:text-2xl lg:text-3xl xl:text-4xl py-2 md:py-5 text-wrap">
             Hi, I'm Sojirat Petchpaiboon
           </h1>
-          <h4 className=" font-bold text-xl md:text-2xl lg:text-3xl py-4">
+          <h4 className=" font-bold text-xl md:text-2xl lg:text-4xl xl:text-6xl py-2 md:py-5">
             {text} <br />
           </h4>
-
-          <p className=" font-base text-sm md:text-md py-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-            possimus nobis voluptates voluptatum pariatur unde atque est magnam
-            amet deleniti. Molestias consequuntur alias, labore ipsa magnam
-            provident perspiciatis temporibus soluta!
+          <p className=" font-base text-sm md:text-lg py-2 md:py-5 text-wrap">
+          I'm a career changer passionate about building responsive web
+          applications.
           </p>
         </div>
         <div className="flex pt-5 gap-5">
@@ -76,7 +74,7 @@ const Home = () => {
           <a href="https://www.linkedin.com/in/sojirat/">
             <button className=" flex bg-[#588594] gap-2 w-32 lg:w-44 py-2 justify-center rounded-lg">
               <img
-                src="src/assets/github_2111432.png"
+                src={linkin}
                 alt="github"
                 width="20px"
               ></img>{" "}
