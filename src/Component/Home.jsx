@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 import linkin from "/linkin.png"
+import CV from "/CV-petch.pdf"
 
 
 const Home = () => {
@@ -64,7 +65,7 @@ const Home = () => {
           </p>
         </div>
         <div className="flex pt-5 gap-5">
-          <a href="public/CV_Sojirat.pdf">
+          <a href={CV} download="CV">
             <button className=" bg-[#588594] flex gap-2 w-32 lg:w-44 py-2 justify-center rounded-lg">
               <ArrowDownTrayIcon className="w-5" />
               CV
