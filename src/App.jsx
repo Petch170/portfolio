@@ -7,6 +7,8 @@ import Project from "./Component/Project";
 import Skill from './Component/Skill'
 import Contact from './Component/Contact'
 import Experience from "./Component/Experience";
+import NavbarSide from "./Component/NavbarSide";
+import NavbarA from "./Component/NavbarA";
 
 
 function App() {
@@ -14,7 +16,9 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
+      {/* <NavbarSide/> */}
+      <NavbarA/>
       <Home />
       <Aboutus />
       <Skill/>
