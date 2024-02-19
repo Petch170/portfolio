@@ -9,8 +9,9 @@ import { Pagination } from "swiper/modules";
 const Experience = () => {
 
   return (
-    <div id="Exp" className="px-5 md:mx-36 lg:mx-56 lg:h-[750px]">
-      <h2 className="text-center text-lg md:text-xl lg:text-3xl font-semibold my-2 underline lg:pt-24">Experience</h2>
+    <div id="Exp" className="px-5 md:mx-36 lg:mx-56 h-screen">
+      {/* <div className="border flex flex-col justify-center items-center gap-5"> */}
+      <h2 className="text-center text-xl md:text-3xl lg:text-5xl font-semibold my-2 pt-16 underline text-[#c2a371]">Experience</h2>
       <Swiper
         slidesPerView={2} 
         spaceBetween={5}
@@ -28,7 +29,7 @@ const Experience = () => {
       >
         {exwork.map((exWork) => (
           <SwiperSlide key={exWork.title}>
-            <div className="border bg-[1E5F74] rounded-lg m-5 p-4 mx-4 text-wrap h-[400px] md:h-[450px]">
+            <div className="border border-slate-600 bg-slate-700 rounded-lg m-5 p-4 mx-4 text-wrap max-w-[500px] h-[450px]">
               <h2 className=" text-md md:text-lg lg:text-xl font-semibold text-wrap text-center mt-4">
                 {exWork.title}
               </h2>
@@ -49,7 +50,8 @@ const Experience = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+      </div>
+    // </div>
   );
 };
 export default Experience;

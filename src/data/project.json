@@ -10,8 +10,8 @@
     {
         "title":"I.Move",
         "imageSrc":"public/star.jpg",
-        "description":"This is project to learn React",
-        "skill":["react","Express","MongoDB"],
+        "description":"This is excercise application",
+        "skill":["react","tailwind","Express","MongoDB"],
         "demo":"versel",
         "github":"github"
     }

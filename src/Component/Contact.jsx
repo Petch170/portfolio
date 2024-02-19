@@ -14,21 +14,22 @@ const Contact = () => {
   };
 
   return (
-    <div id="contactme" className="p-5 md:mx-36 lg:mx-56 lg:h-[750px] justify-center items-center">
-      <h2 className="text-center text-lg md:text-xl lg:text-3xl font-semibold my-2 md:my-8 underline lg:pt-24">
+    <div id="contactme" className="p-5 md:mx-36 lg:mx-56 h-screen flex justify-center items-center">
+     <div className="flex justify-center gap-5 flex-col items-center  ">
+      <h2 className="text-center text-xl md:text-3xl lg:text-5xl font-semibold my-2 underline text-[#c2a371]">
         Contact
       </h2>
-      <div className="flex flex-wrap justify-center gap-14 pt-5 ">
+      
         <div className="Left flex flex-wrap justify-center gap-5">
-          <div className=" bg-[#588594] gap-3 flex flex-col justify-center items-center w-[240px] p-5 rounded-lg text-sm md:text-md ">
+          <div className=" bg-[#588594] gap-3 flex flex-col justify-center items-center w-[240px] p-5 rounded-lg text-lg md:text-2xl ">
             <DevicePhoneMobileIcon className=" w-10 bg-gray-600 rounded-[50%] p-1 justify-center items-center" />
             {infoMe.phone}
           </div>
-          <div className="bg-[#588594]  gap-3 flex flex-col justify-center items-center w-[240px] p-5 rounded-lg text-sm md:text-md ">
+          <div className="bg-[#588594]  gap-3 flex flex-col justify-center items-center w-[240px] p-5 rounded-lg text-lg md:text-2xl ">
             <AtSymbolIcon className=" w-10 bg-gray-600 rounded-[50%] p-1 justify-center items-center" />
             {infoMe.email}
           </div>
-          <div className="bg-[#588594] gap-3 flex flex-col justify-center items-center w-[240px] p-5 rounded-lg text-sm md:text-md ">
+          <div className="bg-[#588594] gap-3 flex flex-col justify-center items-center w-[240px] p-5 rounded-lg text-lg md:text-2xl ">
             <MapPinIcon className=" w-10  bg-gray-600 rounded-[50%] p-1 justify-center items-center" />
             {infoMe.home}
           </div>

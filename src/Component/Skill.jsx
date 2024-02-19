@@ -55,14 +55,14 @@ const Skill = () => {
   ];
 
   return (
-    <div id="skill" className="p-5 lg:h-[750px] flex items-center justify-center overflow-hidden bg-[url('/star2.jpg')] bg-center bg-cover bg-no-repeat">
-    <div className="w-full md:mx-36 lg:mx-56">
-        <h2 className=" text-center text-lg md:text-xl lg:text-3xl font-semibold my-2 md:my-6 underline ">My Skill</h2>
+    <div id="skill" className="px-5 h-screen flex items-center justify-center">
+    <div className=" h-full w-full md:mx-36 lg:mx-56 flex flex-col justify-center">
+        <h2 className=" text-center text-xl md:text-3xl lg:text-5xl font-semibold my-2 md:my-6 underline text-[#c2a371]">My Skill</h2>
         <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-3 justify-center pt-2 pb-5">
           {data.map((member) => (
             <div
               key={member.id}
-              className="border border-orange-600 rounded-md flex flex-col items-center "
+              className=" bg-slate-700  border-b-2 hover:scale-105 duration-300 rounded-md flex flex-col items-center "
             >
               <div className=" p-3 w-20 md:w-25  h-16  ">
                 <img

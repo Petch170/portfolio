@@ -4,6 +4,7 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
+import diamond from "/diamond.svg";
 
 function NavbarA() {
   const [nav, setNav] = useState(false);
@@ -15,13 +16,16 @@ function NavbarA() {
     }
   };
 
+  // bg-[#0E3B43] top-0 z-20 py-2 px-5 w-full hidden sm:flex flex-wrap justify-between items-center text-lg fixed
+  // fixed top-0 sm:hidden z-50 w-full #9f651a #d7ba8d #c2a371
   return (
     <div>
-      <div className=" bg-[#0E3B43] top-0 z-20 py-6 px-5 w-full hidden sm:flex flex-wrap justify-between items-center text-lg fixed">
-        <div>
+      <div className=" bg-[#c2a371] p-4 top-0 z-50 w-full hidden md:flex justify-between items-center text-lg fixed">
+        <div className=" flex items-center gap-2" onClick={() => scrollToSection("home")}>
+          <img src={diamond} alt="diamond" className=" w-12 bg-transparent cursor-pointer" />
           <a
-            className="hover:cursor-pointer opacity-100"
-            onClick={() => scrollToSection("home")}
+            className="hover:cursor-pointer opacity-100 text-2xl lg:text-4xl  font-bold hover:text-[#01314c]"
+            
           >
             Petch
           </a>
@@ -29,7 +33,7 @@ function NavbarA() {
         <ul className="list flex gap-10">
           <li>
             <a
-              className="hover:cursor-pointer opacity-100"
+              className="hover:cursor-pointer opacity-100 text-xl lg:text-2xl hover:font-bold hover:text-[#01314c] hover:scale-150 "
               onClick={() => scrollToSection("about-me")}
             >
               About
@@ -37,7 +41,7 @@ function NavbarA() {
           </li>
           <li>
             <a
-              className="hover:cursor-pointer opacity-100"
+              className="hover:cursor-pointer opacity-100 text-xl lg:text-2xl hover:font-bold hover:text-[#01314c] hover:scale-150"
               onClick={() => scrollToSection("skill")}
             >
               Skill
@@ -45,7 +49,7 @@ function NavbarA() {
           </li>
           <li>
             <a
-              className="hover:cursor-pointer opacity-100"
+              className="hover:cursor-pointer opacity-100 text-xl lg:text-2xl hover:font-bold hover:text-[#01314c] hover:scale-150"
               onClick={() => scrollToSection("Exp")}
             >
               Experience
@@ -53,7 +57,7 @@ function NavbarA() {
           </li>
           <li>
             <a
-              className="hover:cursor-pointer opacity-100"
+              className="hover:cursor-pointer opacity-100 text-xl lg:text-2xl hover:font-bold hover:text-[#01314c] hover:scale-150"
               onClick={() => scrollToSection("myproject")}
             >
               Project
@@ -61,7 +65,7 @@ function NavbarA() {
           </li>
           <li>
             <a
-              className="hover:cursor-pointer opacity-100"
+              className="hover:cursor-pointer opacity-100 text-xl lg:text-2xl hover:font-bold hover:text-[#01314c] hover:scale-150"
               onClick={() => scrollToSection("contactme")}
             >
               Contact
@@ -72,18 +76,24 @@ function NavbarA() {
 
       {/* Mobile */}
       <div className="fixed top-0 sm:hidden z-50 w-full ">
-        <div className="flex justify-between  items-center bg-[#0E3B43] border-b rounded-md p-5">
+        <div className="flex justify-between  items-center bg-[#c2a371] border-b rounded-b-lg p-5">
           <Bars3Icon
             className="w-8 border border-blue rounded-lg"
             onClick={() => setNav(!nav)}
           />
           {/* <div className=" flex justify-between items-center z-50 py-1 w-[250px]">  */}
-          <p className="flex  text-2xl font-bold left-4"  onClick={() => scrollToSection("home")}> Petch</p>
+          <p
+            className="flex  text-2xl font-bold left-4"
+            onClick={() => scrollToSection("home")}
+          >
+            {" "}
+            Petch
+          </p>
         </div>
         {/* <XMarkIcon  className="w-8 relative right-4 top-0 " /> */}
         {/* </div> */}
         {nav ? (
-          <nav className=" flex flex-col w-[250px] bg-[#0E3B43] h-screen duration-300">
+          <nav className=" flex flex-col w-[250px] bg-[#c2a371] h-screen duration-300">
             <ul className="flex flex-col px-4 pt-5 ">
               <li
                 onClick={() => scrollToSection("about-me")}

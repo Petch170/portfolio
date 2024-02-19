@@ -14,8 +14,11 @@ body {
     background-repeat:no-repeat; 
     background-position: center top;
     background-size: cover; */
-    background-color: rgb(34, 30, 41);
-    color: #F9EBFF;
+    /* background-color: rgb(34, 30, 41);
+    color: #F9EBFF; */
+    background: rgb(1, 49, 76);
+    /* background: linear-gradient(0deg, rgba(34,193,195,1) 41%, rgba(253,187,45,1) 100%); */
+    color: #ffffff;
 }
 
 html {

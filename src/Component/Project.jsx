@@ -6,15 +6,15 @@ const Project = () => {
   return (
     <div
       id="myproject"
-      className="p-5 lg:h-[750px] flex items-center justify-center overflow-hidden bg-[url('/star2.jpg')] bg-center bg-cover bg-no-repeat">
-      <div className="w-full md:mx-36 lg:mx-56">
-        <h2 className="  text-center text-lg md:text-xl lg:text-3xl font-semibold my-2 md:my-6 underline">
+      className="px-5 h-screen flex items-center justify-center">
+      <div className=" md:mx-36 lg:mx-56 flex flex-col justify-center gap-5 ">
+        <h2 className="  text-center text-xl md:text-3xl lg:text-5xl font-semibold my-2 underline text-[#c2a371]">
           Projects
         </h2>
         <div className="flex flex-wrap gap-10 pt-2 pb-5 justify-center">
           {project.map((project, id) => {
             return (
-              <div key={id} className=" bg-[#221e29] rounded-2xl py-4 ">
+              <div key={id} className=" border border-slate-600 bg-slate-700 rounded-2xl py-4 shadow-lg hover:scale-105 duration-300">
                 <div className="px-6 w-60 md:w-[350px] h-44 md:h-[250px]">
                   <img
                     className=" mb-2 rounded-lg bg-contain bg-center w-full h-full "

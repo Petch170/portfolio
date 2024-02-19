@@ -45,7 +45,7 @@ const Home = () => {
 
   return (
 
-    <div id="home" className=" relative flex p-5 mt-5 justify-center items-center md:flex-row h-[750px] overflow-hidden bg-[url('/star2.jpg')] bg-center bg-cover bg-no-repeat">
+    <div id="home" className=" relative flex p-5 justify-center items-center md:flex-row h-screen ">
 
       <div className="items-center justify-center w-full md:w-[60%]">
         <div className="px-4 ">
@@ -53,13 +53,13 @@ const Home = () => {
             {" "}
             Welcome to my Portfolio
           </span>
-          <h1 className=" font-bold md:text-2xl lg:text-3xl xl:text-4xl py-2 md:py-5 text-wrap">
+          <h1 className=" font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl py-2 md:py-5 text-wrap">
             Hi, I'm Sojirat Petchpaiboon
           </h1>
-          <h4 className=" font-bold text-xl md:text-2xl lg:text-4xl xl:text-6xl py-2 md:py-5">
+          <h4 className=" font-bold text-2xl md:text-3xl lg:text-4xl xl:text-6xl py-2 md:py-5">
             {text} <br />
           </h4>
-          <p className=" font-base text-sm md:text-lg py-2 md:py-5 text-wrap">
+          <p className=" font-base text-lg md:text-xl py-2 md:py-5 text-wrap">
           I'm a career changer passionate about building responsive web
           applications.
           </p>
