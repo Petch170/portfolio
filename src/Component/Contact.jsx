@@ -21,15 +21,15 @@ const Contact = () => {
       </h2>
       
         <div className="Left flex flex-wrap justify-center gap-5">
-          <div className=" bg-[#588594] gap-3 flex flex-col justify-center items-center w-[240px] p-5 rounded-lg text-lg md:text-2xl ">
+          <div className=" bg-[#588594] gap-3 flex flex-col justify-center items-center w-[240px]  md:w-[350px] p-5 rounded-lg text-lg md:text-2xl ">
             <DevicePhoneMobileIcon className=" w-10 bg-gray-600 rounded-[50%] p-1 justify-center items-center" />
             {infoMe.phone}
           </div>
-          <div className="bg-[#588594]  gap-3 flex flex-col justify-center items-center w-[240px] p-5 rounded-lg text-lg md:text-2xl ">
+          <div className="bg-[#588594]  gap-3 flex flex-col justify-center items-center w-[240px]  md:w-[350px] p-5 rounded-lg text-lg md:text-2xl ">
             <AtSymbolIcon className=" w-10 bg-gray-600 rounded-[50%] p-1 justify-center items-center" />
             {infoMe.email}
           </div>
-          <div className="bg-[#588594] gap-3 flex flex-col justify-center items-center w-[240px] p-5 rounded-lg text-lg md:text-2xl ">
+          <div className="bg-[#588594] gap-3 flex flex-col justify-center items-center w-[240px]  md:w-[350px] p-5 rounded-lg text-lg md:text-2xl ">
             <MapPinIcon className=" w-10  bg-gray-600 rounded-[50%] p-1 justify-center items-center" />
             {infoMe.home}
           </div>

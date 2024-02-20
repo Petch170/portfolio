@@ -9,10 +9,10 @@
     },
     {
         "title":"I.Move",
-        "imageSrc":"public/star.jpg",
+        "imageSrc":"public/imove.png",
         "description":"This is excercise application",
         "skill":["react","tailwind","Express","MongoDB"],
-        "demo":"versel",
-        "github":"github"
+        "demo":"https://imovetracking.vercel.app/",
+        "github":"https://github.com/Nan-wp/Project-I.Move"
     }
 ]

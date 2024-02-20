@@ -17,12 +17,12 @@ const Project = () => {
               <div key={id} className=" border border-slate-600 bg-slate-700 rounded-2xl py-4 shadow-lg hover:scale-105 duration-300">
                 <div className="px-6 w-60 md:w-[350px] h-44 md:h-[250px]">
                   <img
-                    className=" mb-2 rounded-lg bg-contain bg-center w-full h-full "
+                    className=" mb-2 rounded-lg bg-cover w-full h-full"
                     src={getImageUrl(project.imageSrc)}
                     alt={` image of ${project.title}`}
                   ></img>
                 </div>
-                <div>
+                <div className="px-6 w-60 md:w-[350px]">
                   <h3 className=" text-md md:text-xl font-semibold text-wrap text-center">
                     {project.title}
                   </h3>
