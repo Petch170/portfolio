@@ -14,8 +14,8 @@ const Contact = () => {
   };
 
   return (
-    <div id="contactme" className="p-5 md:mx-36 lg:mx-56 h-screen flex justify-center items-center">
-     <div className="flex justify-center gap-5 flex-col items-center  ">
+    <div id="contactme" className="px-5 md:mx-30 lg:mx-56 flex items-center justify-center">
+     <div className="flex justify-center gap-5 flex-col items-center  my-10 sm:my-12 md:my-20 lg:my-28 ">
       <h2 className="text-center text-xl md:text-3xl lg:text-5xl font-semibold my-2 underline text-[#c2a371]">
         Contact
       </h2>

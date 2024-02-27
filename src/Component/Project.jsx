@@ -6,9 +6,9 @@ const Project = () => {
   return (
     <div
       id="myproject"
-      className="px-5 h-screen flex items-center justify-center">
-      <div className=" md:mx-36 lg:mx-56 flex flex-col justify-center gap-5 ">
-        <h2 className="  text-center text-xl md:text-3xl lg:text-5xl font-semibold my-2 underline text-[#c2a371]">
+      className="px-5 md:mx-30 lg:mx-56 flex items-center justify-center">
+      <div className=" flex flex-col gap-5 my-10 ">
+        <h2 className=" text-center text-xl md:text-3xl lg:text-5xl font-semibold my-2 underline text-[#c2a371]">
           Projects
         </h2>
         <div className="flex flex-wrap gap-10 pt-2 pb-5 justify-center">

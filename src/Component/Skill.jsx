@@ -55,8 +55,8 @@ const Skill = () => {
   ];
 
   return (
-    <div id="skill" className="px-5 h-screen flex items-center justify-center">
-    <div className=" h-full w-full md:mx-36 lg:mx-56 flex flex-col justify-center">
+    <div id="skill" className="px-5 flex items-center justify-center">
+    <div className=" h-full w-full md:mx-36 lg:mx-56 flex flex-col justify-center my-10 sm:my-12 md:my-20 lg:my-28">
         <h2 className=" text-center text-xl md:text-3xl lg:text-5xl font-semibold my-2 md:my-6 underline text-[#c2a371]">My Skill</h2>
         <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-3 justify-center pt-2 pb-5">
           {data.map((member) => (

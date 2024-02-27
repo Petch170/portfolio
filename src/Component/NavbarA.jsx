@@ -19,8 +19,8 @@ function NavbarA() {
   // bg-[#0E3B43] top-0 z-20 py-2 px-5 w-full hidden sm:flex flex-wrap justify-between items-center text-lg fixed
   // fixed top-0 sm:hidden z-50 w-full #9f651a #d7ba8d #c2a371
   return (
-    <div>
-      <div className=" bg-[#c2a371] p-4 top-0 z-50 w-full hidden md:flex justify-between items-center text-lg fixed">
+    <div className="sticky top-0 z-50">
+      <div className=" bg-[#c2a371] p-4 w-full hidden md:flex justify-between items-center text-lg ">
         <div className=" flex items-center gap-2" onClick={() => scrollToSection("home")}>
           <img src={diamond} alt="diamond" className=" w-12 bg-transparent cursor-pointer" />
           <a
@@ -74,16 +74,17 @@ function NavbarA() {
         </ul>
       </div>
 
-      {/* Mobile */}
-      <div className="fixed top-0 sm:hidden z-50 w-full ">
-        <div className="flex justify-between  items-center bg-[#c2a371] border-b rounded-b-lg p-5">
+      {/* Mobile */}  
+      {/* fixed top-0 z-50 */}
+      <div className=" md:hidden w-full sticky top-0 z-50">
+        <div className=" flex justify-between items-center bg-[#c2a371] border-b rounded-b-lg p-5">
           <Bars3Icon
             className="w-8 border border-blue rounded-lg"
             onClick={() => setNav(!nav)}
           />
           {/* <div className=" flex justify-between items-center z-50 py-1 w-[250px]">  */}
           <p
-            className="flex  text-2xl font-bold left-4"
+            className="flex text-2xl font-bold left-4 hover:cursor-pointer"
             onClick={() => scrollToSection("home")}
           >
             {" "}
@@ -93,8 +94,8 @@ function NavbarA() {
         {/* <XMarkIcon  className="w-8 relative right-4 top-0 " /> */}
         {/* </div> */}
         {nav ? (
-          <nav className=" flex flex-col w-[250px] bg-[#c2a371] h-screen duration-300">
-            <ul className="flex flex-col px-4 pt-5 ">
+          <nav className=" sticky top-0">
+            <ul className="px-4 py-5 duration-300 w-[250px] bg-[#c2a371] rounded-b-xl">
               <li
                 onClick={() => scrollToSection("about-me")}
                 className="text-xl py-4 border-b border-gray-200 rounded-xl text-center shadow-lg hover:font-bold hover:scale-105 "

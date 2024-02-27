@@ -45,9 +45,8 @@ const Home = () => {
 
   return (
 
-    <div id="home" className=" relative flex p-5 justify-center items-center md:flex-row h-screen ">
-
-      <div className="items-center justify-center w-full md:w-[60%]">
+    <div id="home" className=" relative flex p-5 justify-center items-center md:flex-row ">
+      <div className="items-center justify-center w-full md:w-[60%] my-10 sm:my-12 md:my-20 lg:my-28">
         <div className="px-4 ">
           <span className="tagline tracking-[.8px] p-3 font-bold text-lg my-4 inline-block bg-gradient-to-r from-violet-500 to-fuchsia-500 border border-[255,255,255,.5] rounded-md ">
             {" "}
