@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 import linkin from "/linkin.png"
-import CV from "/CV_petch.pdf"
+import CV from "/CV_Sojirat.p.pdf"
 
 
 const Home = () => {
