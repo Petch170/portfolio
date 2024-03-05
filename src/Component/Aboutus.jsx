@@ -9,7 +9,7 @@ const Aboutus = () => {
           <div className="flex flex-1">
             <p className="text-lg md:text-xl lg:text-2xl font-base text-start pt-2 px-8 ">
               My name is{" "}
-              <span className="font-bold"> "Sojirat Petchpaiboon" , </span>I
+              <span className="font-bold"> Sojirat Petchpaiboon , </span>I
               graduated from the Generation Thailand Bootcamp cohort 6,
               masterring JavaScript, React, Node.js, Express, TailwindCSS,
               MongoDB, HTML, CSS, SQL and Git. Always evolving. Excited to

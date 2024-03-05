@@ -29,8 +29,8 @@ const Experience = () => {
       }}
       >
         {exwork.map((exWork) => (
-          <SwiperSlide key={exWork.title}>
-            <div className="border border-slate-600 bg-slate-700 rounded-lg m-5 p-4 mx-4 text-wrap max-w-[500px] h-[400px]">
+          <SwiperSlide key={exWork.title} className="flex xl:gap-10">
+            <div className="border border-slate-600 bg-slate-700 rounded-lg m-5 p-4 mx-4 text-wrap max-w-[500px] h-[400px] xl:w-full xl:max-w-none ">
               <h2 className=" text-md md:text-lg lg:text-xl font-semibold text-wrap text-center mt-4">
                 {exWork.title}
               </h2>
